@@ -13,11 +13,14 @@ import javax.persistence.*;
 public class ContinentEntity {
 
     @Id
+    @Column
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    @Column
     private String picture;
 
+    @Column
     private String denomination;
 
 }

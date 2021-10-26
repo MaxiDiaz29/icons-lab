@@ -2,6 +2,8 @@ package com.icons.icons.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Required;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +13,9 @@ import java.util.Set;
 @Getter
 @Setter
 public class CountryEntity {
+
     @Id
+    @Column
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 

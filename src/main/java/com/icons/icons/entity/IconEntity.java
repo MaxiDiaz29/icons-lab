@@ -16,6 +16,7 @@ import java.util.*;
 public class IconEntity {
 
     @Id
+    @Column
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
