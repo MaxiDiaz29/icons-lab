@@ -29,7 +29,9 @@ public class CountryMapper {
             dto.setId(entity.getId());
             dto.setArea(entity.getArea());
             dto.setNumberInhabitants(entity.getNumberInhabitants());
-            dto.setIcons();
+
+            dto.setIcons(this.iconMapper.iconEntitySet2DTO(entity.getIcons()));
+
         }
 
         return dto;

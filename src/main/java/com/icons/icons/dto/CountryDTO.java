@@ -3,6 +3,7 @@ package com.icons.icons.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Set;
 
 @Setter
@@ -14,6 +15,6 @@ public class CountryDTO {
     private Long area;
     private ContinentDTO continent;
     private Long continentId;
-    private Set icons;
+    private List icons;
 
 }

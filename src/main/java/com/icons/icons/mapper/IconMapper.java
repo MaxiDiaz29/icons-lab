@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Component
 public class IconMapper {
@@ -49,7 +51,7 @@ public class IconMapper {
         return dto;
     }
 
-    public List<IconDTO> iconEntity2DTO(List<IconEntity> entities){
+    public List<IconDTO> iconEntitySet2DTO(Set<IconEntity> entities){
         List<IconDTO> dtos = new ArrayList<>();
 
         if(entities != null) {
@@ -60,8 +62,8 @@ public class IconMapper {
         return dtos;
     }
 
-    public List<IconEntity> iconDTO2Entity (List<IconDTO> dtos){
-        List<IconEntity> entities = new ArrayList<>();
+    public Set<IconEntity> iconDTOList2Entity (List<IconDTO> dtos){
+        Set<IconEntity> entities = new HashSet<>();
 
 
         if(dtos != null) {
